@@ -1,5 +1,5 @@
 const request = require("supertest");
-const server = require("./app");
+const server = require("../app");
 
 test("Hello world works", async () => {
   const response = await request(server.callback()).get("/");
